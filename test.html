@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">  
+  <head>    
+    <meta charset="utf-8">    
+    <title>Bootstrap, from Twitter
+    </title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="description" content="">    
+    <meta name="author" content="">    
+    <!-- Le styles -->    
+    <link href="css/bootstrap.css" rel="stylesheet">    
+    <style>      body {         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */       }              
+    .title {         text-align:center;         font-weight:bold;         font-size:14px;       }       
+    .edit_area   { width : 234px;}              
+    .edit_area_large   { width : 580px;}
+    .type    { border:0px; color:lightGray;background-color: #FFFFFF;}
+    #canvas { border-color:#FFF; background-color: #FFFFFF;}
+    td  { border-width:1px;border-color:#FFF;margin:2px;padding:10px; background-color: #EEEEEE;}
+    </style>    
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.wysiwyg.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/ui-lightness/jquery-ui.css" type="text/css" media="screen" charset="utf-8">
+    
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->    
+    <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->    
+    <!-- Le fav and touch icons -->    
+    <link rel="shortcut icon" href="ico/favicon.ico">    
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">    
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">    
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">  
+  </head>  
+  <body>    
+    <div class="navbar navbar-fixed-top">      
+      <div class="navbar-inner">        
+        <div class="container">          
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">            
+            <span class="icon-bar">
+            </span>            
+            <span class="icon-bar">
+            </span>            
+            <span class="icon-bar">
+            </span>          </a>          
+          <a class="brand" href="#">Lean Canvas Tool </a>          
+          <div class="nav-collapse">            
+            <ul class="nav">              
+              <li class="active">
+                <a href="#">Home</a>
+              </li>              
+              <li>
+              <a href="#about">About</a>
+              </li>              
+              <li>
+              <a href="#contact">Contact</a>
+              </li>            
+            </ul>          
+          </div>
+          <!--/.nav-collapse -->        
+        </div>      
+      </div>    
+    </div>    
+    <div class="container">      <h1>Lean Canvas Tool</h1>
+    
+    
+    
+<div id="dialog-form" title="Canva Setting">
+	<p class="validateTips">Select the best value for this canva.</p>
+
+	<form>
+	<fieldset>
+		<label for="name">Estimated Result</label>
+		<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+		<label for="email">Email</label>
+		<input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all" />
+	</fieldset>
+	</form>
+</div>
+          
+      <p>Use this document as a way to quick start any new project. 
+      </p>             
+      <table id="canvas" width="80%" height="512" border="1">      
+        <tr>        
+          <td width="20%" rowspan="2">
+            <div class="title">Problems
+            </div>
+            <div class="edit_area">
+             <p>Top three problems : 	
+                <ul>		
+                  <li>First problem
+                  </li>	
+                  <li>Second problem
+                  </li>	
+                  <li>Third problem
+                  </li>	
+                </ul>
+              </p>
+            </div></td>        
+          <td width="20%" >
+            <div class="title">Solution
+            </div>
+            <div class="edit_area">
+             <p>Top three solution elements : 	
+                <ul>		
+                  <li>First solution element
+                  </li>	
+                  <li>Second solution element
+                  </li>	
+                  <li>Third solution element
+                  </li>	
+                </ul>
+              </p>
+            </div></td>        
+          <td colspan="2" rowspan="2">
+            <div class="title">Unique Value Proposition
+            </div>
+            <div class="edit_area">
+              Single, clear, compelling message that stats why you are different and worth paying attention. 
+            </div></td>        
+          <td width="20%">
+            <div class="title">Unfair Advantage
+            </div>
+            <div class="edit_area">
+            Can't be easily copied or bought
+            </div></td>        
+          <td  width="20%" rowspan="2">
+            <div class="title">Customer Segment
+            </div>
+            <div class="edit_area">
+            Target customers
+            </div></td>      
+        </tr>      
+        <tr>        
+          <td width="20%">
+            <div class="title">Key Metrics
+            </div>
+            <div class="edit_area">
+              Key activites you measure
+            </div></td>        
+          <td width="20%">
+            <div class="title">Channels
+            </div>
+            <div class="edit_area">
+            Path to customers
+            </div></td>      
+        </tr>      
+        <tr>        
+          <td colspan="3">
+            <div class="title">Cost Structure
+            </div>
+            <div class="edit_area_large">
+              <p>Customer acquisition cost</p>
+              <p>Distribution costs</p>
+              <p>Hosting</p> 
+              <p>People</p>
+              <p>Etc.</p>
+            </div></td>        
+          <td colspan="3">
+            <div class="title">Revenue Streams
+            </div>
+            <div class="edit_area_large">	
+              <p>Revenue Model
+              </p>
+              <p>Life Time Value
+              </p>
+              <p>Revenue 
+              </p>
+              <p>Gross margin
+              </p>
+            </div></td>      
+        </tr>    
+        
+        <tr>        
+          <td colspan="3" class="type">
+            <div class="title">PRODUCT
+            </div>
+          <td colspan="3" class="type">
+            <div class="title">MARKET
+            </div>
+            </td>      
+        </tr>    
+        
+        
+      </table>              
+    </div> 
+    
+    
+    
+    <!-- /container -->    
+    <!-- Le javascript
+        ================================================== -->    
+    <!-- Placed at the end of the document so the pages load faster -->    
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.wysiwyg.js"></script>    
+<script src="js/jquery.jeditable.js"></script>
+<script src="js/jquery.jeditable.wysiwyg.js"></script>    
+<script src="js/bootstrap-transition.js"></script>    
+<script src="js/bootstrap-alert.js"></script>    
+<script src="js/bootstrap-modal.js"></script>    
+<script src="js/bootstrap-dropdown.js"></script>    
+<script src="js/bootstrap-scrollspy.js"></script>    
+<script src="js/bootstrap-tab.js"></script>    
+<script src="js/bootstrap-tooltip.js"></script>    
+<script src="js/bootstrap-popover.js"></script>    
+<script src="js/bootstrap-button.js"></script>    
+<script src="js/bootstrap-collapse.js"></script>    
+<script src="js/bootstrap-carousel.js"></script>    
+<script src="js/bootstrap-typeahead.js"></script>    
+<script>
+   
+      
+     $(document).ready(function() {
+     $('.edit').editable(function(value, settings) { 
+    
+     return(value);
+  }, {
+ type      : 'wysiwyg',
+    width     : 640,
+    height    : 'auto',
+    onblur    : 'ignore',
+             cancel    : 'Cancel',
+         submit    : 'OK',
+         indicator : '<img src="img/indicator.gif">',
+         tooltip   : 'Click to edit...'
+     });
+     
+     $('.edit_area').editable(function(value, settings) { 
+    
+     return(value);
+  }, {
+         width     : 220,
+         rows      : 4, 
+     type      : 'wysiwyg',
+    height    : 'auto',
+      onblur    : 'ignore',
+         cancel    : 'Cancel',
+         submit    : 'OK',
+         indicator : '<img src="img/indicator.gif">',
+         tooltip   : 'Click to edit...',
+          wysiwyg   : { controls : { separator04         : { visible : true },
+                               insertOrderedList   : { visible : true },
+                               insertUnorderedList : { visible : true }
+                }}
+     });
+            
+            
+    $('.edit_area_large').editable(function(value, settings) { 
+    
+     return(value);
+  }, {
+         width     : 570,
+         rows      : 8, 
+       type      : 'wysiwyg',
+    height    : 'auto',
+    onblur    : 'ignore',
+       cancel    : 'Cancel',
+         submit    : 'OK',
+         indicator : '<img src="img/indicator.gif">',
+         tooltip   : 'Click to edit...' ,
+          wysiwyg   : { controls : { separator04         : { visible : true },
+                               insertOrderedList   : { visible : true },
+                               insertUnorderedList : { visible : true }
+                } 
+      }});
+      
+      
+      
+      $( "#dialog-form" ).dialog({
+			autoOpen: false,
+			height: 300,
+			width: 350,
+			modal: true,
+			buttons: {
+				"Create an account": function() {
+					var bValid = true;
+					allFields.removeClass( "ui-state-error" );
+
+					bValid = bValid && checkLength( name, "username", 3, 16 );
+					bValid = bValid && checkLength( email, "email", 6, 80 );
+					bValid = bValid && checkLength( password, "password", 5, 16 );
+
+					bValid = bValid && checkRegexp( name, /^[a-z]([0-9a-z_])+$/i, "Username may consist of a-z, 0-9, underscores, begin with a letter." );
+					// From jquery.validate.js (by joern), contributed by Scott Gonzalez: http://projects.scottsplayground.com/email_address_validation/
+					bValid = bValid && checkRegexp( email, /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i, "eg. ui@jquery.com" );
+					bValid = bValid && checkRegexp( password, /^([0-9a-zA-Z])+$/, "Password field only allow : a-z 0-9" );
+
+					if ( bValid ) {
+						$( "#users tbody" ).append( "<tr>" +
+							"<td>" + name.val() + "</td>" + 
+							"<td>" + email.val() + "</td>" + 
+							"<td>" + password.val() + "</td>" +
+						"</tr>" ); 
+						$( this ).dialog( "close" );
+					}
+				},
+				Cancel: function() {
+					$( this ).dialog( "close" );
+				}
+			},
+			close: function() {
+				allFields.val( "" ).removeClass( "ui-state-error" );
+			}
+		});
+
+		$( "div.title" )
+			.click(function() {
+				$( "#dialog-form" ).dialog( "open" );
+			});
+      
+      
+ });
+ 
+    </script>  
+  </body>
+</html>
